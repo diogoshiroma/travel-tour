@@ -1,3 +1,10 @@
 {
-  "plugins": ["babel-plugin-styled-components"]
+  "presets": [
+    ["latest", {
+      "es2015": {
+        "modules": false
+      }
+    }]
+  ],
+  "plugins": ["react-hot-loader/babel" , "babel-plugin-styled-components"]
 }
