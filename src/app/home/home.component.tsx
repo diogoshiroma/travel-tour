@@ -77,6 +77,7 @@ export default function Home() {
                   <Button
                     size="small"
                     color="primary"
+                    onClick= {() => console.log()}
                   >
                     View
                   </Button>
