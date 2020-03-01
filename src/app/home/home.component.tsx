@@ -9,6 +9,7 @@ import Toolbar from "@material-ui/core/Toolbar";
 import Typography from "@material-ui/core/Typography";
 import { makeStyles } from "@material-ui/core/styles";
 import Container from "@material-ui/core/Container";
+import { Link } from "react-router-dom";
 
 const useStyles = makeStyles(theme => ({
   icon: {
@@ -59,7 +60,7 @@ export default function Home() {
         <Container className={classes.cardGrid} maxWidth="md">
           <Grid container spacing={4}>
             <Grid item key={1} xs={12} sm={6} md={4}>
-              <div onClick={() => console.log("roteiro")}>
+              <Link to={"/trip-planner"} style={{ textDecoration: "none" }}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -73,7 +74,7 @@ export default function Home() {
                     <Typography>Visualize seu roteiro</Typography>
                   </CardContent>
                 </Card>
-              </div>
+              </Link>
             </Grid>
             <Grid item key={2} xs={12} sm={6} md={4}>
               <div onClick={() => console.log("hospedagem")}>
