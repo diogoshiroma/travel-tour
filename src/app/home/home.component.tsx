@@ -43,7 +43,7 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function Home() {
+export const Home = () => {
   const classes = useStyles();
 
   return (
@@ -76,8 +76,9 @@ export default function Home() {
                 </Card>
               </Link>
             </Grid>
+
             <Grid item key={2} xs={12} sm={6} md={4}>
-              <div onClick={() => console.log("hospedagem")}>
+              <a onClick={() => window.open("http://localhost:3000/", "_blank")} style={{"cursor": "pointer"}}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -91,11 +92,11 @@ export default function Home() {
                     <Typography>Encontre seu quarto</Typography>
                   </CardContent>
                 </Card>
-              </div>
+              </a>
             </Grid>
 
             <Grid item key={3} xs={12} sm={6} md={4}>
-              <div onClick={() => console.log("passeios")}>
+              <a onClick={() => alert("Abriu o TourFinder")} style={{"cursor": "pointer"}}>
                 <Card className={classes.card}>
                   <CardMedia
                     className={classes.cardMedia}
@@ -109,7 +110,7 @@ export default function Home() {
                     <Typography>Compre seus passeios</Typography>
                   </CardContent>
                 </Card>
-              </div>
+              </a>
             </Grid>
           </Grid>
         </Container>
