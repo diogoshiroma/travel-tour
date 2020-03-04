@@ -7,7 +7,7 @@
 
 ## How to run
 
-Access `travel-tour` project directory from a terminal, run the command `yarn install` in order to install the project dependencies. Next, run the command `yarn start` and open the URL `http://localhost:3000` from a browser of your preference.
+Access `travel-tour` project directory from a terminal, run the command `yarn install` in order to install the project dependencies. Next, run the command `yarn start` and open the URL `http://localhost:3006` from a browser of your preference.
 
 ## Dependencies
 
