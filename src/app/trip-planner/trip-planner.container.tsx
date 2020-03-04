@@ -5,7 +5,7 @@ import { TripPlanner } from './trip-planner.component';
 export class TripPlannerContainer extends React.Component<RouteComponentProps> {
   render() {
     return (
-    <TripPlanner />
+      <TripPlanner />
     );
   }
 }
