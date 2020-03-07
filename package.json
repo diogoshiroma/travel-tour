@@ -24,7 +24,7 @@
     "typescript": "3.6.4"
   },
   "scripts": {
-    "start": "set PORT=3006 && react-scripts start",
+    "start": "PORT=3006 && react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -51,7 +51,7 @@
     "@types/styled-components": "4.1.19",
     "babel-plugin-styled-components": "1.10.6",
     "babel-preset-latest": "6.24.1",
-    "react-hot-loader": "4.5.3",
+    "react-hot-loader": "^4.5.3",
     "typescript": "3.6.4"
   }
 }
