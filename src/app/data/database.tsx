@@ -1,8 +1,20 @@
 import { Residence } from "../../model/entities";
+import { CalendarEvent } from "./model";
+import { getCalendarEvents } from "./requests";
 
 export const getResidenceById = (id: number): Residence | null  => {
   const residences = datasourceResidences.filter(res => res.id === id);
   return residences.length > 0 ? residences[0] : null;
+}
+
+export const populateCalendarEvents = async () => {
+  const res: CalendarEvent[] = await getCalendarEvents();
+  console.log(res);
+  if (res.length > 0) {
+    console.log('Dados carregados corretamente: ' + res.length + ' carregadas.');
+  } else {
+    console.log('Nenhum dado carregado');
+  }
 }
 
 export const datasourceResidences: Residence[] = [
