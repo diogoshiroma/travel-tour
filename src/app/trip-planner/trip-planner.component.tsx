@@ -6,7 +6,7 @@ import "react-big-calendar/lib/css/react-big-calendar.css";
 const localizer = momentLocalizer(moment);
 
 export const TripPlanner = (props: any) => {
-  return (<div>
+  return (<div style={{height:'500px'}}>
     <Calendar
       localizer={localizer}
       events={props.eventsList}
